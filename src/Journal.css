@@ -1,0 +1,267 @@
+.journal-container {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding-bottom: 80px;
+}
+
+/* Header */
+.journal-header {
+  background: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.journal-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* New Entry Section */
+.new-entry-section {
+  padding: 20px;
+}
+
+.entry-input-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.entry-title-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  padding: 8px 0;
+}
+
+.entry-title-input::placeholder {
+  color: #d1d5db;
+}
+
+.entry-content-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #4b5563;
+  resize: none;
+  font-family: inherit;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.entry-content-input::placeholder {
+  color: #d1d5db;
+}
+
+/* Entry Actions */
+.entry-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.entry-tools {
+  display: flex;
+  gap: 8px;
+}
+
+.tool-button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: #f9fafb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #9ca3af;
+  font-size: 20px;
+}
+
+.tool-button:hover {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.save-button {
+  padding: 10px 28px;
+  background: #1f2937;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.save-button:hover {
+  background: #111827;
+  transform: translateY(-1px);
+}
+
+/* Recent Entries Section */
+.recent-entries-section {
+  padding: 0 20px 20px;
+}
+
+.recent-entries-section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.entries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Entry Card */
+.entry-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.entry-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.entry-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.entry-timestamp {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9ca3af;
+  letter-spacing: 0.5px;
+}
+
+.entry-badges {
+  display: flex;
+  gap: 6px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.checkin-badge {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.mood-badge {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+
+.entry-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.entry-preview {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.entry-concerns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.concern-tag {
+  padding: 6px 12px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  z-index: 100;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  color: #9ca3af;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.nav-item svg {
+  font-size: 24px;
+}
+
+.nav-item.active {
+  color: #667eea;
+}
+
+.nav-item:hover {
+  color: #667eea;
+}
