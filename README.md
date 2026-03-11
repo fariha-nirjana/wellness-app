@@ -67,7 +67,7 @@ An intelligent web application featuring 5 autonomous AI agents that work togeth
 - ✅ Responsive design (mobile-first, 480px max-width)
 
 **Design:**
-- ✅ Prototype made with Figma
+- ✅ 9-screen Figma prototype
 - ✅ Purple/teal color palette
 - ✅ Consistent UI/UX across all pages
 
@@ -101,11 +101,7 @@ Design:
 
 We need to choose our backend technology. Here are three viable options:
 
-### Option 1: Flask API
-
-- easy, lightweight, but as ma'am said to another team, flask might not be the best choice
-
-### Option 2: Node.js + Express
+### Option 1: Node.js + Express ⭐ **(Recommended)**
 
 **Tech Stack:**
 ```
@@ -128,9 +124,12 @@ Auth: JWT + bcrypt
 - ❌ Less structure than Django (requires discipline)
 - ❌ Callback complexity (mitigated with async/await)
 
+**Learning Curve:** Low-Medium  
+**Best For:** JavaScript-focused teams, API-first architecture
+
 ---
 
-### Option 3: Django + Django REST Framework
+### Option 2: Django + Django REST Framework
 
 **Tech Stack:**
 ```
@@ -154,6 +153,53 @@ Auth: Django Auth + JWT
 - ❌ Steeper learning curve
 - ❌ Different language from frontend
 
+**Learning Curve:** Medium-High  
+**Best For:** Python-experienced teams, structured projects
+
+---
+
+### Option 3: Supabase (Backend-as-a-Service)
+
+**Tech Stack:**
+```
+Backend: Supabase (managed)
+Database: PostgreSQL (included)
+AI/ML: Hugging Face API + Edge Functions
+Auth: Supabase Auth (built-in)
+Storage: Supabase Storage
+```
+
+**Pros:**
+- ✅ No backend code needed
+- ✅ Instant PostgreSQL database
+- ✅ Built-in authentication
+- ✅ Real-time subscriptions
+- ✅ Very fast development
+- ✅ Free tier available
+
+**Cons:**
+- ❌ Less control over backend
+- ❌ Vendor lock-in
+- ❌ May seem like "taking shortcuts" academically
+- ❌ Limited customization
+
+**Learning Curve:** Low  
+**Best For:** Fast MVPs, but risky for academic evaluation
+
+---
+
+## 📊 Comparison Table
+
+| Feature | Node.js + Express | Django | Supabase |
+|---------|------------------|--------|----------|
+| **Language** | JavaScript | Python | JavaScript |
+| **Learning Curve** | ⭐⭐ | ⭐⭐⭐ | ⭐ |
+| **Industry Use** | ✅✅✅ | ✅✅✅ | ✅✅ |
+| **Control** | High | High | Medium |
+| **Setup Time** | Fast | Medium | Very Fast |
+| **Academic Credit** | ✅✅✅ | ✅✅✅ | ✅✅ |
+| **Team Skill** | TBD | TBD | TBD |
+
 ---
 
 ## 💻 Setup Instructions
@@ -167,7 +213,7 @@ Auth: Django Auth + JWT
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/fariha-nirjana/Mental-Wellness-Burnout-Prevention-System/blob/main/README.md.git
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
 cd wellness-app
 ```
 
@@ -253,7 +299,15 @@ wellness-app/
 
 ---
 
-## Future Potential Tasks
+## 👥 Team Roles & Contributions
+
+**Note:** All team members should have visible Git commits. Tasks will be distributed based on:
+- Backend technology choice
+- Individual strengths
+- Weekly sprint planning
+
+### Potential Task Distribution
+*(To be finalized after backend decision)*
 
 **Frontend Tasks:**
 - Polish UI/UX
@@ -277,6 +331,13 @@ wellness-app/
 
 ---
 
+## 📚 Resources
+
+### Course Materials
+- Sommerville - Software Engineering (Textbook)
+- Pressman & Maxim - Software Engineering (Textbook)
+- Professor RSY's lecture notes
+
 ### Technical Documentation
 - [React Docs](https://react.dev/)
 - [Node.js Docs](https://nodejs.org/docs/) *(if chosen)*
@@ -286,9 +347,12 @@ wellness-app/
 - [PostgreSQL Docs](https://www.postgresql.org/docs/)
 
 ### Project Management
-- [Trello Board](https://trello.com/b/H9igODOW/my-trello-board)
+- [Trello Board](YOUR-TRELLO-LINK)
+- [Figma Prototype](YOUR-FIGMA-LINK)
 
 ---
+
+## 🤝 Contributing
 
 ### Git Workflow
 
@@ -316,6 +380,29 @@ git push origin feature/your-feature-name
 - Example: `Add user authentication endpoint`
 
 ---
+
+## 📞 Team Contact
+
+- **Project Lead:** [Your Name]
+- **Team Members:** [Member 2], [Member 3]
+- **Professor:** Reeshoon Sayera (RSY)
+- **Office Hours:** Thu & Sat 9:30-11:20am
+- **Email:** reeshoon.sayera@northsouth.edu
+
+---
+
+## 📝 License
+
+This project is for academic purposes as part of CSE 327 at North South University.
+
+---
+
+## 🙏 Acknowledgments
+
+- Professor Reeshoon Sayera for project guidance
+- North South University CSE Department
+- Anthropic Claude for development assistance
+- Figma community for design inspiration
 
 ---
 
