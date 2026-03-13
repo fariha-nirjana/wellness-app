@@ -1,0 +1,136 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(270deg,#4facfe,#00f2fe,#6a11cb,#2575fc);
+background-size:800% 800%;
+animation:gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* floating animated circles */
+
+body::before,
+body::after{
+content:"";
+position:absolute;
+width:300px;
+height:300px;
+border-radius:50%;
+background:rgba(255,255,255,0.15);
+filter:blur(60px);
+animation:float 6s infinite alternate;
+}
+
+body::before{
+top:10%;
+left:15%;
+}
+
+body::after{
+bottom:10%;
+right:15%;
+}
+
+@keyframes float{
+from{transform:translateY(-20px);}
+to{transform:translateY(20px);}
+}
+
+/* glass card */
+
+.container{
+width:380px;
+padding:40px;
+border-radius:20px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(20px);
+box-shadow:0 10px 40px rgba(0,0,0,0.3);
+text-align:center;
+color:white;
+animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h2{
+margin-bottom:25px;
+font-weight:600;
+letter-spacing:1px;
+}
+
+/* input group */
+
+.inputBox{
+position:relative;
+margin-bottom:25px;
+}
+
+.inputBox input{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+outline:none;
+font-size:14px;
+background:rgba(255,255,255,0.2);
+color:white;
+}
+
+.inputBox label{
+position:absolute;
+left:12px;
+top:12px;
+font-size:13px;
+color:#ddd;
+transition:0.3s;
+pointer-events:none;
+}
+
+.inputBox input:focus + label,
+.inputBox input:valid + label{
+top:-8px;
+font-size:11px;
+color:#00e5ff;
+}
+
+/* button */
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:linear-gradient(45deg,#00e5ff,#6a11cb);
+color:white;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px rgba(0,229,255,0.7);
+}
